@@ -1,5 +1,6 @@
-package oat.tryaspectj.dao;
+package oat.tryaspectj.dao.using_jpa;
 
+import oat.tryaspectj.dao.StudentDao;
 import oat.tryaspectj.entity.Student;
 import oat.tryaspectj.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class StudentDaoImpl implements StudentDao{
+public class StudentDaoImpl implements StudentDao {
     @Autowired
     StudentRepository studentRepository;
 
